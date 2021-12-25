@@ -13,7 +13,7 @@
 		@apply border-none p-2 outline-none bg-transparent;
 	}
 	.misc {
-		@apply flex text-gray-400 justify-evenly;
+		@apply flex text-gray-300 justify-evenly;
 	}
 	.misc-item {
 		@apply mx-3 cursor-pointer hover:text-offWhite;
