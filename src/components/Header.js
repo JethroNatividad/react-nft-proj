@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/header/cryptopunk-logo.png'
 import searchIcon from '../assets/header/search.png'
+import themeSwitchIcon from '../assets/header/theme-switch.png'
 const Header = () => {
     return (
         <div className="text-offWhite p-5 flex justify-between items-center" >
@@ -23,6 +24,18 @@ const Header = () => {
                 <p className="mx-3 cursor-pointer hover:text-offWhite">Drops</p>
                 <p className="mx-3 cursor-pointer hover:text-offWhite">Marketplace</p>
                 <p className="mx-3 cursor-pointer hover:text-offWhite">Create</p>
+            </div>
+
+            {/* Actions */}
+
+            <div>
+                <div className="bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center m-3">
+
+                    <div className="w-8 object-cover">
+                        <img src={themeSwitchIcon} alt="toggle" className="w-full h-full" />
+                    </div>
+                </div>
+
             </div>
         </div>
     )
