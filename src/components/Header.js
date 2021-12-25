@@ -1,9 +1,11 @@
 import React from 'react'
-
+import logo from '../assets/header/cryptopunk-logo.png'
 const Header = () => {
     return (
         <div className="text-white">
-            <p>Header</p>
+            <div>
+                <img src={logo} alt="logo" />
+            </div>
         </div>
     )
 }
