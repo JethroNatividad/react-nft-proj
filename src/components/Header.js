@@ -28,12 +28,15 @@ const Header = () => {
 
             {/* Actions */}
 
-            <div>
-                <div className="bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center m-3">
-
+            <div className="flex items-center">
+                <div className="bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center mx-6">
                     <div className="w-8 object-cover">
                         <img src={themeSwitchIcon} alt="toggle" className="w-full h-full" />
                     </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-green-300 to-cyan-400 h-12 w-28 rounded-3xl flex justify-center items-center mx-3">
+                    <p>LOGIN</p>
                 </div>
 
             </div>
