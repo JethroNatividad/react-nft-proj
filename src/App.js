@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="h-screen w-screen bg-black font-sans">
       <Header />
-      {nfts.map(nft => <Card key={nfts.id} img={nft.image_original_url} title={nft.name} traits={nft.traits} id={nft.id} />)}
+      {nfts.map(nft => <Card key={nft.token_id} img={nft.image_original_url} title={nft.name} traits={nft.traits} id={nft.token_id} />)}
     </div>
   );
 }
