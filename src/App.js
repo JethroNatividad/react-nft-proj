@@ -21,7 +21,7 @@ function App() {
     <div className="h-screen w-screen bg-black font-sans">
       {/* <Header />
       <CardList nfts={nfts} /> */}
-      <a href="intent://com.android.settings/#Intent;scheme=android-app;end">Click here</a>
+      <a href="intent://com.android.settings/#Intent;scheme=android-app;end" className="text-white">Click here</a>
     </div>
   );
 }
