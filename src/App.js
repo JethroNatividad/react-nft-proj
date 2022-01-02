@@ -7,6 +7,7 @@ import spinner from './assets/loading.svg'
 function App() {
   const [nfts, setNfts] = useState([])
   const [loading, setLoading] = useState(true)
+  const [currentNft, setCurrentNft] = useState({})
 
   useEffect(() => {
     async function main() {
@@ -15,6 +16,9 @@ function App() {
       const res = await axios.get(`https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=${collectionAddress}`)
       setNfts(res.data.assets)
       setLoading(false)
+      if (res.data.assets[0]) {
+        setCurrentNft(res.data.assets[0])
+      }
     }
     return main()
   }, [])
@@ -25,6 +29,7 @@ function App() {
       {loading && <div className="absolute w-full h-full flex justify-center items-center"><img src={spinner} alt="loading" /></div>}
       <Header />
       <CardList nfts={nfts} />
+      <p className="text-white">{JSON.stringify(currentNft)}</p>
     </div>
   );
 }
