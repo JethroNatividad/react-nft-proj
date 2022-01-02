@@ -35,10 +35,10 @@ function App() {
   return (
     <div className={`${isDarkMode && 'dark'} h-screen w-screen `}>
 
-      <div className={`h-full w-full bg-offWhite-100 dark:bg-black font-sans `}>
+      <div className={`h-full w-full bg-offWhite-200 dark:bg-black font-sans `}>
 
         {loading && <div className="absolute w-full h-full flex justify-center items-center"><img src={spinner} alt="loading" /></div>}
-        <Header toggleIsDarkMode={toggleIsDarkMode} />
+        <Header toggleIsDarkMode={toggleIsDarkMode} isDarkMode={isDarkMode} />
 
         {!loading && <CurrentNft data={currentNft} />}
         <Divider />

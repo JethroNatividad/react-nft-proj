@@ -4,22 +4,22 @@
 
 @layer components {
 	.header {
-		@apply text-offWhite-100 p-5 flex justify-between items-center;
+		@apply text-black dark:text-offWhite-100 p-5 flex justify-between items-center;
 	}
 	.search {
-		@apply w-64 h-12 flex items-center bg-gray-600 rounded-3xl flex-1 p-2 mx-5;
+		@apply w-64 h-12 flex items-center bg-offWhite-100 dark:bg-gray-600 rounded-3xl flex-1 p-2 mx-5;
 	}
 	.search-input {
 		@apply border-none p-2 outline-none bg-transparent;
 	}
 	.misc {
-		@apply flex text-gray-300 justify-evenly;
+		@apply flex dark:text-gray-300 justify-evenly;
 	}
 	.misc-item {
 		@apply mx-3 cursor-pointer hover:text-offWhite-100;
 	}
 	.theme-switch {
-		@apply bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center mx-6;
+		@apply bg-offWhite-100 dark:bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center mx-6;
 	}
 	.login-button {
 		@apply bg-gradient-to-r from-green-300 to-cyan-400 h-12 w-28 rounded-3xl flex justify-center items-center mx-3 text-black;
