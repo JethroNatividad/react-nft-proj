@@ -28,10 +28,10 @@
 		@apply mx-3 cursor-pointer hover:text-offWhite-100;
 	}
 	.theme-switch {
-		@apply bg-offWhite-100 dark:bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center mx-6;
+		@apply bg-offWhite-100 dark:bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center mx-6 cursor-pointer;
 	}
 	.login-button {
-		@apply bg-gradient-to-r from-green-300 to-cyan-400 h-12 w-28 rounded-3xl flex justify-center items-center mx-3 text-black;
+		@apply bg-gradient-to-r from-green-300 to-cyan-400 h-12 w-28 rounded-3xl flex justify-center items-center mx-3 text-black cursor-pointer;
 	}
 	.card-list {
 		@apply flex overflow-scroll my-5;
