@@ -3,6 +3,7 @@ import instagram from '../assets/owner/instagram.png'
 import twitter from '../assets/owner/twitter.png'
 import more from '../assets/owner/more.png'
 const CurrentNft = ({ data }) => {
+    console.log(data)
     return (
         <div className="flex text-white w-full p-3 mb-10">
             <div className="h-60  ">
@@ -16,10 +17,10 @@ const CurrentNft = ({ data }) => {
 
                 <div className='flex justify-between'>
                     <div className="flex flex-1">
-                        <img className="h-14 object-contain rounded-full mr-3" src="https://ipfs.io/ipfs/bafkreigehmswocff4fwv4ktbvs7bfj2eliledu2ofegi664fxraaowzjwq" alt="user" />
+                        <img className="h-14 object-contain rounded-full mr-3" src={data.creator.profile_img_url} alt="user" />
                         <div >
-                            <p>0x134712341234huqe2341</p>
-                            <a className="text-cyan-500 hover:underline" href="https://google.com">@HSKDA</a>
+                            <p>{data.creator.address}</p>
+                            <p className="text-cyan-500 hover:underline">@{data.creator.address.substring(0, 6)}</p>
                         </div>
                     </div>
 
