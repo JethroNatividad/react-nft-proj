@@ -4,6 +4,7 @@ import Header from './components/Header';
 import axios from 'axios'
 import CardList from './components/CardList';
 import spinner from './assets/loading.svg'
+import CurrentNft from './components/CurrentNft';
 function App() {
   const [nfts, setNfts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -28,8 +29,9 @@ function App() {
 
       {loading && <div className="absolute w-full h-full flex justify-center items-center"><img src={spinner} alt="loading" /></div>}
       <Header />
+      <CurrentNft data={currentNft} />
       <CardList nfts={nfts} />
-      <p className="text-white">{JSON.stringify(currentNft)}</p>
+      {/* <p className="text-white">{JSON.stringify(currentNft)}</p> */}
     </div>
   );
 }

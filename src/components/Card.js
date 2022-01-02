@@ -7,7 +7,7 @@ const Card = ({ img, title, traits, id }) => {
             {/* details */}
             <div className="p-5">
                 <p className="text-xl font-bold">{title}</p>
-                <p className="text-gray-300">.#{id}</p>
+                <p className="text-gray-300">·#{id}</p>
                 {/* price */}
                 <div className="flex">
                     <img className="w-6 object-contain ml-[-8px]" src={ethIcon} alt="eth" />
