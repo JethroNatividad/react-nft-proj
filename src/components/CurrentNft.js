@@ -1,7 +1,4 @@
 import React from 'react'
-import instagram from '../assets/owner/instagram.png'
-import twitter from '../assets/owner/twitter.png'
-import more from '../assets/owner/more.png'
 
 import { RiInstagramFill, RiTwitterFill, RiMoreFill } from "react-icons/ri"
 
