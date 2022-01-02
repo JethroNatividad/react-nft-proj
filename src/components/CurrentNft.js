@@ -35,10 +35,7 @@ const CurrentNft = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
     )
 }
