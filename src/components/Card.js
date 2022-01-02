@@ -2,7 +2,7 @@ import React from 'react'
 import ethIcon from '../assets/eth.png'
 const Card = ({ img, title, traits, id, setCurrentNft, nft }) => {
     return (
-        <div onClick={() => setCurrentNft(nft)} className="bg-offWhite-100 dark:bg-gray-600 text-offWhite w-60 h-[400px] rounded-xl shadow-md shadow-gray-600 overflow-hidden mx-3 shrink-0 cursor-pointer my-5">
+        <div onClick={() => setCurrentNft(nft)} className="bg-offWhite-100 dark:bg-gray-600 text-offWhite w-60 h-[400px] hover:w-64 hover:h-[420px] transition-all duration-300 rounded-xl shadow-md shadow-gray-600 overflow-hidden mx-3 shrink-0 cursor-pointer my-5">
             <img src={img} alt={title} className="w-full object-cover" />
             {/* details */}
             <div className="p-5 dark:text-white">
