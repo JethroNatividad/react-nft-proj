@@ -40,10 +40,12 @@ function App() {
         {loading && <div className="absolute w-full h-full flex justify-center items-center"><img src={spinner} alt="loading" /></div>}
         <Header toggleIsDarkMode={toggleIsDarkMode} isDarkMode={isDarkMode} />
 
-        {!loading && <CurrentNft data={currentNft} />}
-        <Divider />
-        <CardList nfts={nfts} setCurrentNft={setCurrentNft} />
-        <Divider />
+        {!loading && <>
+          <CurrentNft data={currentNft} />
+          <Divider />
+          <CardList nfts={nfts} setCurrentNft={setCurrentNft} />
+          <Divider />
+        </>}
       </div>
     </div>
   );
