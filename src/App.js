@@ -11,6 +11,7 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [currentNft, setCurrentNft] = useState({})
 
+
   useEffect(() => {
     async function main() {
       // const contractAddress = '0x7C9F8Bd44257dE4A06cc5316AcD61a2543b37306'
@@ -35,9 +36,8 @@ function App() {
 
       {!loading && <CurrentNft data={currentNft} />}
       <Divider />
-      <CardList nfts={nfts} />
+      <CardList nfts={nfts} setCurrentNft={setCurrentNft} />
       <Divider />
-      {/* <p className="text-white">{JSON.stringify(currentNft)}</p> */}
     </div>
   );
 }
