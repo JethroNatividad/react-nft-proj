@@ -4,7 +4,7 @@
 
 @layer components {
 	.header {
-		@apply text-offWhite p-5 flex justify-between items-center;
+		@apply text-offWhite-100 p-5 flex justify-between items-center;
 	}
 	.search {
 		@apply w-64 h-12 flex items-center bg-gray-600 rounded-3xl flex-1 p-2 mx-5;
@@ -16,7 +16,7 @@
 		@apply flex text-gray-300 justify-evenly;
 	}
 	.misc-item {
-		@apply mx-3 cursor-pointer hover:text-offWhite;
+		@apply mx-3 cursor-pointer hover:text-offWhite-100;
 	}
 	.theme-switch {
 		@apply bg-gray-600 rounded-3xl h-12 w-12 flex items-center justify-center mx-6;

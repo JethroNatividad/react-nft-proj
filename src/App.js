@@ -10,6 +10,10 @@ function App() {
   const [nfts, setNfts] = useState([])
   const [loading, setLoading] = useState(true)
   const [currentNft, setCurrentNft] = useState({})
+  const [isDarkMode, setIsDarkMode] = useState(true)
+  function toggleIsDarkMode() {
+    setIsDarkMode(!isDarkMode)
+  }
 
 
   useEffect(() => {
@@ -29,15 +33,18 @@ function App() {
   }, [])
 
   return (
-    <div className="h-screen w-screen bg-black font-sans">
+    <div className={`${isDarkMode && 'dark'} h-screen w-screen `}>
 
-      {loading && <div className="absolute w-full h-full flex justify-center items-center"><img src={spinner} alt="loading" /></div>}
-      <Header />
+      <div className={`h-full w-full bg-offWhite-100 dark:bg-black font-sans `}>
 
-      {!loading && <CurrentNft data={currentNft} />}
-      <Divider />
-      <CardList nfts={nfts} setCurrentNft={setCurrentNft} />
-      <Divider />
+        {loading && <div className="absolute w-full h-full flex justify-center items-center"><img src={spinner} alt="loading" /></div>}
+        <Header toggleIsDarkMode={toggleIsDarkMode} />
+
+        {!loading && <CurrentNft data={currentNft} />}
+        <Divider />
+        <CardList nfts={nfts} setCurrentNft={setCurrentNft} />
+        <Divider />
+      </div>
     </div>
   );
 }

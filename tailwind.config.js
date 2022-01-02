@@ -7,9 +7,13 @@ module.exports = {
           600: '#1c1c1e',
           300: '#a1a5b0'
         },
-        offWhite: '#eee'
+        offWhite: {
+          100: '#eee',
+          200: '#F7F6F2'
+        }
       }
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
