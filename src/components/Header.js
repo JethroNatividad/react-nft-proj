@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/header/cryptopunk-logo.png'
 import searchIcon from '../assets/header/search.png'
 import themeSwitchIcon from '../assets/header/theme-switch.png'
-const Header = () => {
+const Header = ({ toggleIsDarkMode }) => {
     return (
         <div className="header" >
             {/* Logo */}
@@ -29,7 +29,7 @@ const Header = () => {
             {/* Actions */}
 
             <div className="flex items-center">
-                <div className="theme-switch">
+                <div className="theme-switch" onClick={toggleIsDarkMode}>
                     <div className="w-8 object-cover">
                         <img src={themeSwitchIcon} alt="toggle" className="w-full h-full" />
                     </div>
