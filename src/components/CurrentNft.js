@@ -11,7 +11,7 @@ const CurrentNft = ({ data }) => {
 
             <div className="flex flex-col justify-between flex-1 px-12  ">
                 <div>
-                    <h1 className=" font-bold text-6xl">BEST GODDESS<span className="text-gray-300">·#1</span></h1>
+                    <h1 className=" font-bold text-6xl">{data.name}<span className="text-gray-300">·#{data.token_id}</span></h1>
                 </div>
 
                 <div className='flex justify-between'>
