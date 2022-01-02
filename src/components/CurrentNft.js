@@ -2,6 +2,9 @@ import React from 'react'
 import instagram from '../assets/owner/instagram.png'
 import twitter from '../assets/owner/twitter.png'
 import more from '../assets/owner/more.png'
+
+import { RiInstagramFill, RiTwitterFill, RiMoreFill } from "react-icons/ri"
+
 const CurrentNft = ({ data }) => {
     console.log(data)
     return (
@@ -25,14 +28,14 @@ const CurrentNft = ({ data }) => {
                     </div>
 
                     <div className="flex">
-                        <div className="h-14 w-14 border-solid border-gray-300 hover:border-white border-2 rounded-full flex justify-center items-center mx-1">
-                            <img className="h-10 object-contain" src={instagram} alt="user" />
+                        <div className="h-14 w-14 border-solid border-gray-300 hover:border-black dark:hover:border-white border-2 rounded-full flex justify-center items-center mx-1">
+                            <RiInstagramFill className="text-4xl" />
                         </div>
-                        <div className="h-14 w-14 border-solid border-gray-300 hover:border-white border-2 rounded-full flex justify-center items-center mx-1">
-                            <img className="h-10 object-contain" src={twitter} alt="user" />
+                        <div className="h-14 w-14 border-solid border-gray-300 hover:border-black dark:hover:border-white border-2 rounded-full flex justify-center items-center mx-1">
+                            <RiTwitterFill className="text-4xl" />
                         </div>
-                        <div className="h-14 w-14 border-solid border-gray-300 hover:border-white border-2 rounded-full flex justify-center items-center mx-1">
-                            <img className="h-10 object-contain" src={more} alt="user" />
+                        <div className="h-14 w-14 border-solid border-gray-300 hover:border-black dark:hover:border-white border-2 rounded-full flex justify-center items-center mx-1">
+                            <RiMoreFill className="text-4xl" />
                         </div>
                     </div>
                 </div>
