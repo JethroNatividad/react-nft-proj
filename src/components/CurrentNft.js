@@ -2,11 +2,11 @@ import React from 'react'
 import instagram from '../assets/owner/instagram.png'
 import twitter from '../assets/owner/twitter.png'
 import more from '../assets/owner/more.png'
-const CurrentNft = () => {
+const CurrentNft = ({ data }) => {
     return (
         <div className="flex text-white w-full p-3 mb-10">
             <div className="h-60  ">
-                <img className="h-full rounded-xl object-contain" src="https://ipfs.io/ipfs/bafkreigehmswocff4fwv4ktbvs7bfj2eliledu2ofegi664fxraaowzjwq" alt="current" />
+                <img className="h-full rounded-xl object-contain" src={data.image_original_url} alt="current" />
             </div>
 
             <div className="flex flex-col justify-between flex-1 px-12  ">
