@@ -25,7 +25,7 @@
 		@apply bg-gradient-to-r from-green-300 to-cyan-400 h-12 w-28 rounded-3xl flex justify-center items-center mx-3 text-black;
 	}
 	.card-list {
-		@apply flex overflow-scroll;
+		@apply flex overflow-scroll my-10;
 	}
 	.card-list::-webkit-scrollbar {
 		@apply hidden;

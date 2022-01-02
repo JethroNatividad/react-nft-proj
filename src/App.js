@@ -33,6 +33,7 @@ function App() {
       <CurrentNft data={currentNft} />
       <Divider />
       <CardList nfts={nfts} />
+      <Divider />
       {/* <p className="text-white">{JSON.stringify(currentNft)}</p> */}
     </div>
   );
