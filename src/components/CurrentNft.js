@@ -5,14 +5,14 @@ import more from '../assets/owner/more.png'
 const CurrentNft = ({ data }) => {
     console.log(data)
     return (
-        <div className="flex text-white w-full p-3 mb-10">
+        <div className="flex dark:text-white w-full p-3 mb-10">
             <div className="h-60  ">
                 <img className="h-full rounded-xl object-contain" src={data.image_original_url} alt="current" />
             </div>
 
             <div className="flex flex-col justify-between flex-1 px-12  ">
                 <div>
-                    <h1 className=" font-bold text-6xl">{data.name}<span className="text-gray-300">·#{data.token_id}</span></h1>
+                    <h1 className=" font-bold text-6xl">{data.name}<span className="text-gray-600 dark:text-gray-300">·#{data.token_id}</span></h1>
                 </div>
 
                 <div className='flex justify-between'>
