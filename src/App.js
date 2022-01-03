@@ -20,7 +20,7 @@ function App() {
     async function main() {
       // const contractAddress = '0x7C9F8Bd44257dE4A06cc5316AcD61a2543b37306'
       const collectionAddress = '0x7DC2bce2eE2d4BC1a65c00C56516691B913D0d1D'
-      const res = await axios.get(`https://testnets-api.openseaa.io/assets?order_direction=asc&asset_contract_address=${collectionAddress}`)
+      const res = await axios.get(`https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=${collectionAddress}`)
       const arr = res.data.assets
       arr.shift()
       setNfts(arr)
